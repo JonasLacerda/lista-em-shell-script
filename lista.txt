@@ -1,0 +1,11 @@
+#lista
+export LISTA="${HOME}/Documentos/lista.txt"
+
+#listar itens
+listar() { cat $LISTA ;}
+
+#cria tarefa
+listadd() { echo "$(echo $* | md5sum | cut -c 1-4) ➟ $*" >> $LISTA && cat $LIST>
+
+#Remover tarefa
+listadel() { sed -i "/^$*/d" $LISTA ;}
