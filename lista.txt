@@ -1,8 +1,12 @@
+#Acrecentar esse trecho de codigo no fim do arquivo .bashrc na pasta do usuario linux
+
 #lista
 export LISTA="${HOME}/Documentos/lista.txt"
 
 #listar itens
-listar() { cat $LISTA ;}
+listar() { 
+ echo  "para adicionar item listadd e remover listadel"
+ cat $LISTA ;}
 
 #cria tarefa
 listadd() { echo "$(echo $* | md5sum | cut -c 1-4) ➟ $*" >> $LISTA && cat $LIST>
